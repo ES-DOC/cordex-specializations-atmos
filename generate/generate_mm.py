@@ -11,10 +11,10 @@
 """
 import collections
 import json
+import os
 
 import xml.etree.ElementTree as ET
 
-from cim_profile import CIM_PROFILE
 from utils_constants import *
 from utils_model import PropertySpecialization
 from utils_model import TopicSpecialization
@@ -56,9 +56,7 @@ class _Configuration(object):
         """Instance constructor.
 
         """
-        fpath = __file__.replace(".py", ".conf")
-        with open(fpath, 'r') as fstream:
-            self._data = json.loads(fstream.read())
+        self._data = _CONFIG
 
 
     def get_section(self, key):
@@ -98,7 +96,6 @@ class Generator(SpecializationParser):
         self._emit_node(self.mmap, root, style="fork")
         self._emit_change_history(root)
         self._emit_legend(root)
-        self._emit_cim_profile(root)
 
 
     def on_grid_parse(self, grid):
@@ -256,34 +253,6 @@ class Generator(SpecializationParser):
                 ])
 
 
-    def _emit_cim_profile(self, root):
-        """Emits mindmap cim profile.
-
-        """
-        cfg = self.cfg.get_section
-        root_node = ET.SubElement(self.nodes[root], 'node', {
-            'FOLDED': "true",
-            'STYLE': "bubble",
-            'TEXT': "DETAILS INHERITED FROM CIM",
-            'POSITION': "left"
-            })
-        for section, cim_type in _SECTIONS.iteritems():
-            if cim_type in CIM_PROFILE:
-                node = ET.SubElement(root_node, 'node', {
-                    'BACKGROUND_COLOR': cfg(section)['bg-color'],
-                    'COLOR': cfg(section)['font-color'],
-                    'STYLE': "bubble",
-                    'TEXT': section
-                    })
-                for name in CIM_PROFILE[cim_type]['include']:
-                    ET.SubElement(node, 'node', {
-                        'BACKGROUND_COLOR': cfg(section)['bg-color'],
-                        'COLOR': cfg(section)['font-color'],
-                        'STYLE': "bubble",
-                        'TEXT': name
-                        })
-
-
     def _emit_change_history(self, root):
         """Emits change history.
 
@@ -331,3 +300,88 @@ def _get_notes(spec):
         ]
 
     return result
+
+# Mindmap configuration.
+_CONFIG = {
+	"model": {
+		"bg-color": "#F5A9BC",
+		"font-bold": True,
+		"font-color": "#000000",
+		"font-name": "courier",
+		"font-size": 14,
+		"is-collapsed": False,
+		"description": "A model component."
+	},
+	"realm": {
+		"bg-color": "#66cc00",
+		"font-bold": True,
+		"font-color": "#000000",
+		"font-name": "courier",
+		"font-size": 14,
+		"is-collapsed": False,
+		"description": "Scientific area of a numerical model."
+	},
+	"grid": {
+		"bg-color": "#ccccff",
+		"font-bold": True,
+		"font-color": "#000000",
+		"font-name": "courier",
+		"font-size": 12,
+		"is-collapsed": False,
+		"description": "The grid used to layout the variables (e.g. the Global ENDGAME-grid)."
+	},
+	"keyprops": {
+		"bg-color": "#ffff66",
+		"font-bold": True,
+		"font-color": "#000000",
+		"font-name": "courier",
+		"font-size": 12,
+		"is-collapsed": False,
+		"description": "Realm key properties which differ from model defaults (grid, timestep etc)."
+	},
+	"process": {
+		"bg-color": "#FFFFFF",
+		"font-bold": True,
+		"font-color": "#000000",
+		"font-name": "courier",
+		"font-size": 12,
+		"is-collapsed": False,
+		"description": "Process simulated within the realm."
+	},
+	"subprocess": {
+		"bg-color": "#ACF0F2",
+		"font-bold": True,
+		"font-color": "#000000",
+		"font-name": "courier",
+		"font-size": 12,
+		"is-collapsed": False,
+		"description": "A sub-process simulated within a realm process."
+	},
+	"property-set": {
+		"bg-color": "#F3FFE2",
+		"font-bold": True,
+		"font-color": "#000000",
+		"font-name": "courier",
+		"font-size": 10,
+		"is-collapsed": True,
+		"description": "Provides details of specific properties of a process, sub-process, key properties, etc.  There are two possible specialisations expected: (1) A detail_vocabulary is identified, and a cardinality is assigned to that for possible responses; (2) Detail is used to provide a collection or a set of properties which are defined in the sub-class."
+	},
+	"property": {
+		"bg-color": "#C9D787",
+		"font-bold": True,
+		"font-color": "#000000",
+		"font-name": "courier",
+		"font-size": 10,
+		"is-collapsed": True,
+		"description": "A property associated with a detail defined as a 4 member tuple: name, type, cardinality, description."
+	},
+	"enum-choice": {
+		"bg-color": "#FFFFFF",
+		"font-bold": True,
+		"font-color": "#000000",
+		"font-name": "courier",
+		"font-size": 10,
+		"is-collapsed": True,
+		"description": "A choice within an enumeration."
+	}
+}

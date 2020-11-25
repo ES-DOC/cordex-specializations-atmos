@@ -2,7 +2,7 @@
 .. module:: enum_validator.py
    :license: GPL/CeCIL
    :platform: Unix, Windows
-   :synopsis: Validates an enumeration specialization.
+   :synopsis: Validates a enumeration specialization.
 
 .. moduleauthor:: Mark Conway-Greenslade <momipsl@ipsl.jussieu.fr>
 

@@ -68,7 +68,6 @@ class Generator(SpecializationParser):
         obj['contributors'] = [i.strip() for i in root.contributors.split(',')]
         obj['project'] = 'cordexp'
         obj['changeHistory'] = [_get_change(i) for i in root.change_history]
-        obj['shortTables'] = []
         obj['subTopics'] = []
 
         self._maps[root] = obj
@@ -96,7 +95,7 @@ class Generator(SpecializationParser):
         self._maps[topic] = obj
 
 
-    def on_property_parse(self, prop):
+    def on_property_parse(self, prop): 
         """On property parse event handler.
 
         """
@@ -131,4 +130,3 @@ class Generator(SpecializationParser):
                 })
 
         return obj
-

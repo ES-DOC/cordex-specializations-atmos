@@ -22,7 +22,7 @@ _RE_KEY = '^[a-z0-9_:,CO2,CH4,N20,CFC,SO4,ODS,GHG]+$'
 
 
 def validate(ctx, topic):
-    """Validates a scientific detail topic.
+    """Validates a scientific topic.
 
     :param DefinitionsValidationContext ctx: Validation contextual information.
     :param module detail_topic: A python module containing specializations.

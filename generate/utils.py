@@ -27,4 +27,3 @@ def get_label(name):
     name = name.replace("_", " ")
 
     return " ".join("{}{}".format(n[0].upper(), n[1:]) for n in name.split(" "))
-

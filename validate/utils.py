@@ -152,5 +152,3 @@ class ShortTableValidationContext(object):
         self.fpath = fpath
         self.errors = []
         self.warnings = []
-
-

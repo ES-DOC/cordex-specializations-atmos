@@ -8,7 +8,6 @@
 
 
 """
-import argparse
 import datetime
 import glob
 import operator
@@ -20,29 +19,14 @@ import validate_short_table
 import validate_topic
 
 
+# Path to directory in which specializations reside.
+_DIR = os.path.dirname(os.path.dirname(__file__))
+
 # Name of associated project.
-_PROJECT = __file__.split('/')[-3].split('-')[0]
+_PROJECT = __file__.split('/')[-3].split('-specializations-')[0]
 
-# Specializations type is derived from repo name.
-_TYPEOF = os.path.dirname(os.path.dirname(__file__)).split("/")[-1].split("-")[-1]
-
-# Define command line options.
-_ARGS = argparse.ArgumentParser("Validates a set of specializations.")
-_ARGS.add_argument(
-    "--typeof",
-    help="Type of specializations being validated.",
-    dest="typeof",
-    type=str,
-    default=_TYPEOF
-    )
-_ARGS.add_argument(
-    "--input",
-    help="Path to a directory in which specializations reside.",
-    dest="input_dir",
-    type=str,
-    default=os.path.dirname(os.path.dirname(__file__))
-    )
-_ARGS = _ARGS.parse_args()
+# Name of associated specialization.
+_TYPEOF = __file__.split('/')[-3].split('-specializations-')[-1]
 
 # Report section break.
 _REPORT_BREAK = "------------------------------------------------------------------------"
@@ -53,7 +37,7 @@ def _validate_definitions():
 
     """
     # Set specialization modules.
-    modules = utils.get_modules(_ARGS.input_dir, _ARGS.typeof)
+    modules = utils.get_modules(_DIR, _TYPEOF)
 
     # Set validation context.
     ctx = utils.DefinitionsValidationContext(modules)
@@ -70,14 +54,14 @@ def _validate_definitions():
     report = []
     if not errors:
         report.append(_REPORT_BREAK)
-        report.append("{} {} specializations are valid.".format(_PROJECT.upper(), _ARGS.typeof))
+        report.append("{} {} specializations are valid.".format(_PROJECT.upper(), _TYPEOF))
         report.append(_REPORT_BREAK)
     else:
         error_count = len(reduce(operator.add, errors.values()))
         report.append(_REPORT_BREAK)
         report.append("SPECIALIZATIONS VALIDATION REPORT")
         report.append(_REPORT_BREAK)
-        report.append("Specialization Type = {}".format(_ARGS.typeof))
+        report.append("Specialization Type = {}".format(_TYPEOF))
         report.append("Generated @ {}".format(datetime.datetime.now()))
         report.append("Error count = {}".format(error_count))
         report.append(_REPORT_BREAK)
@@ -95,41 +79,4 @@ def _validate_definitions():
 
     return len(errors) == 0
 
-
-def _validate_short_tables():
-    """Validates short tables definitions.
-
-    """
-    # Set files to be validated.
-    dpath = os.path.join(_ARGS.input_dir, 'short_tables')
-    if not os.path.exists(dpath):
-        return
-
-
-    # Validate files.
-    errors = {i: validate_short_table.validate(i) \
-              for i in glob.glob("{}/*.json".format(dpath))}
-
-    # Report errors.
-    report = []
-    for fpath, ferrors in errors.items():
-        fname = fpath.split('/')[-1]
-        if ferrors:
-            report.append(_REPORT_BREAK)
-            report.append("Invalid {} {} short-table: {}".format(_PROJECT.upper(), _ARGS.typeof, fname))
-            for error in ferrors:
-                report.append("\t{}".format(error))
-            report.append(_REPORT_BREAK)
-
-    if not report:
-        report.append(_REPORT_BREAK)
-        report.append("{} {} short-tables are valid.".format(_PROJECT.upper(), _ARGS.typeof))
-        report.append(_REPORT_BREAK)
-
-    # Write to stdout.
-    for l in report:
-        print "ES-DOC :: {}".format(l)
-
-
-if _validate_definitions():
-    _validate_short_tables()
+_validate_definitions()
