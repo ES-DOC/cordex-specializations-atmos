@@ -166,21 +166,7 @@
         <dt><b>Description</b></dt><dd>Characteristics of the model resolution</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="horizontal_resolution_name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>This is a string usually used by the modelling group to describe the resolution of the model grid, e.g. T42, N48.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution.horizontal_resolution_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.resolution.horizontal_resolution_name</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>This is a string usually used by the modelling group to describe the resolution of the model grid, e.g. T42, N48.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution.horizontal_resolution_name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.resolution.horizontal_resolution_name</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="canonical_horizontal_resolution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="canonical_horizontal_resolution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -192,20 +178,6 @@
   <body>
     <dl>
         <dt><b>Description</b></dt><dd>Expression quoted for gross comparisons of resolution, e.g. 2.5 x 3.75 degrees lat-lon.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution.canonical_horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.resolution.canonical_horizontal_resolution</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="range_horizontal_resolution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Range of horizontal resolution with spatial details, eg. 1 deg (Equator) - 0.5 deg</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution.range_horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.resolution.range_horizontal_resolution</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Range of horizontal resolution with spatial details, eg. 1 deg (Equator) - 0.5 deg</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.resolution.range_horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.resolution.range_horizontal_resolution</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_vertical_levels"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -397,20 +369,6 @@
         <dt><b>Description</b></dt><dd>General overview description of tuning: explain and motivate the main targets and metrics retained. andDocument the relative weight given to climate performance metrics versus process oriented metrics, andand on the possible conflicts with parameterization level tuning. In particular describe any struggle andwith a parameter value that required pushing it to its limits to solve a particular model deficiency.</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.description</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.description</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="global_mean_metrics_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>List set of metrics of the global mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.global_mean_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.global_mean_metrics_used</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>List set of metrics of the global mean state used in tuning model/component</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.global_mean_metrics_used</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.key_properties.tuning_applied.global_mean_metrics_used</dd>
-    </dl>
-  </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="regional_metrics_used"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
@@ -460,7 +418,112 @@
         <dt><b>Description</b></dt><dd>Atmosphere discretisation in the horizontal</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="coordinate_system"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Name of horizontal coordinate system/projection</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.coordinate_system</dd><dt><b>Type</b></dt><dd>ENUM:horizontal_coordinate_system</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.coordinate_system</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Name of horizontal coordinate system/projection</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.coordinate_system</dd><dt><b>Type</b></dt><dd>ENUM:horizontal_coordinate_system</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.coordinate_system</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Rotated Polar"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>horizontal_coordinate_system.Rotated Polar</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Lambert Conformal Conic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>horizontal_coordinate_system.Lambert Conformal Conic</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Others"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>horizontal_coordinate_system.Others</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="coordinate_system_details"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Details of horizontal coordinate system/projection (e.g. rotated pole, longitude of central meridian, false easting, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.coordinate_system_details</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.coordinate_system_details</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Details of horizontal coordinate system/projection (e.g. rotated pole, longitude of central meridian, false easting, etc.)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.coordinate_system_details</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.coordinate_system_details</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="horizontal_resolution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Resolution (in deg or km)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.horizontal_resolution</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Resolution (in deg or km)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.horizontal_resolution</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.horizontal_resolution</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="full_domain"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Size of full domain (Nlon x Nlat)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.full_domain</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.full_domain</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Size of full domain (Nlon x Nlat)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.full_domain</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.full_domain</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="relaxation_zone"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Lateral Boundary Relaxation Zone (type, relaxation function, number of grid points (west, south, east, north) and other details)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.relaxation_zone</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.relaxation_zone</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Lateral Boundary Relaxation Zone (type, relaxation function, number of grid points (west, south, east, north) and other details)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.relaxation_zone</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.relaxation_zone</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="inner_domain"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Size of inner domain (Nlon x Nlat)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.inner_domain</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.inner_domain</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Size of inner domain (Nlon x Nlat)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.inner_domain</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.grid.discretisation.horizontal.inner_domain</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -4574,307 +4637,6 @@
   <body>
     <dl>
         <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>sub_grid_scale_h2o_distribution_convection.not coupled with convection</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="observation_simulation"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of observation simulation</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of observation simulation</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="isscp_attributes"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>ISSCP Characteristics</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="top_height_estimation_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height estimation methodUo</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height estimation methodUo</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="no adjustment"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>isscp_top_height.no adjustment</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="IR brightness"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>isscp_top_height.IR brightness</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="visible optical depth"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>isscp_top_height.visible optical depth</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="top_height_direction"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height direction</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_direction</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height_direction</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_direction</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height direction</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_direction</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height_direction</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.isscp_attributes.top_height_direction</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="lowest altitude level"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>isscp_top_height_direction.lowest altitude level</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="highest altitude level"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>isscp_top_height_direction.highest altitude level</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="cosp_attributes"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>CFMIP Observational Simulator Package attributes</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="run_configuration"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP run configuration</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.run_configuration</dd><dt><b>Type</b></dt><dd>ENUM:cosp_run_configuration</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.run_configuration</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP run configuration</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.run_configuration</dd><dt><b>Type</b></dt><dd>ENUM:cosp_run_configuration</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.run_configuration</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Inline"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>cosp_run_configuration.Inline</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Offline"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>cosp_run_configuration.Offline</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_grid_points"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of grid points</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of grid points</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_sub_columns"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of sub-cloumns used to simulate sub-grid variability</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of sub-cloumns used to simulate sub-grid variability</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_levels"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of levels</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_levels</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_levels</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of levels</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_levels</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.cosp_attributes.number_of_levels</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="radar_inputs"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the cloud radar simulator</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="frequency"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar frequency (Hz)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.frequency</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.frequency</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar frequency (Hz)</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.frequency</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.frequency</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.type</dd><dt><b>Type</b></dt><dd>ENUM:inputs_radar_type</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.type</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.type</dd><dt><b>Type</b></dt><dd>ENUM:inputs_radar_type</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.type</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="surface"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>inputs_radar_type.surface</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="space borne"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>inputs_radar_type.space borne</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="gas_absorption"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar uses gas absorption</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.gas_absorption</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.gas_absorption</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar uses gas absorption</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.gas_absorption</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.gas_absorption</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="effective_radius"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar uses effective radius</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.effective_radius</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.effective_radius</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar uses effective radius</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.effective_radius</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.radar_inputs.effective_radius</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="lidar_inputs"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the cloud lidar simulator</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_types"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator lidar ice type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.ice_types</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_ice_type</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.ice_types</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator lidar ice type</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.ice_types</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_ice_type</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.ice_types</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice spheres"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>inputs_lidar_ice_type.ice spheres</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice non-spherical"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>inputs_lidar_ice_type.ice non-spherical</dd>
-    </dl>
-  </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overlap"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator lidar overlap</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.overlap</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_overlap</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.overlap</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator lidar overlap</dd><dt><b>Spec. ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.overlap</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_overlap</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cordexp.atmos.observation_simulation.lidar_inputs.overlap</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="max"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>inputs_lidar_overlap.max</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="random"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>inputs_lidar_overlap.random</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="gravity_waves"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>

@@ -50,7 +50,6 @@ PROCESSES = [
     'atmos_turbulence_convection',
     'atmos_microphysics_precipitation',
 	'atmos_cloud_scheme',
-    'atmos_observation_simulation',
     'atmos_gravity_waves',
     'atmos_natural_forcing',
     ]

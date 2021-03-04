@@ -3182,304 +3182,6 @@
             ]
         }, 
         {
-            "label": "Observation Simulation", 
-            "description": "Characteristics of observation simulation", 
-            "id": "cordexp.atmos.observation_simulation", 
-            "contact": "Charlotte Pascoe", 
-            "properties": [
-                {
-                    "label": "Name", 
-                    "description": "Commonly used name for the observation simulation in atmos model.", 
-                    "id": "cordexp.atmos.observation_simulation.name", 
-                    "cardinality": "0.1", 
-                    "type": "str", 
-                    "is_cim_property": true, 
-                    "uiOrdinal": 1
-                }, 
-                {
-                    "label": "Overview", 
-                    "description": "Overview of characteristics of observation simulation in atmos model.", 
-                    "id": "cordexp.atmos.observation_simulation.overview", 
-                    "cardinality": "0.1", 
-                    "type": "l-str", 
-                    "is_cim_property": true, 
-                    "uiOrdinal": 2
-                }
-            ], 
-            "subProcesses": [
-                {
-                    "label": "Isscp Attributes", 
-                    "description": "ISSCP Characteristics", 
-                    "id": "cordexp.atmos.observation_simulation.isscp_attributes", 
-                    "contact": "Charlotte Pascoe", 
-                    "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of isscp characteristics in atmos model.", 
-                            "id": "cordexp.atmos.observation_simulation.isscp_attributes.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Top Height Estimation Method", 
-                            "description": "Cloud simulator ISSCP top height estimation methodUo", 
-                            "id": "cordexp.atmos.observation_simulation.isscp_attributes.top_height_estimation_method", 
-                            "cardinality": "0.N", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Isscp Top Height", 
-                                "description": "Cloud top height management", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "no adjustment", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "IR brightness", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "visible optical depth", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
-                            "label": "Top Height Direction", 
-                            "description": "Cloud simulator ISSCP top height direction", 
-                            "id": "cordexp.atmos.observation_simulation.isscp_attributes.top_height_direction", 
-                            "cardinality": "0.1", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Isscp Top Height Direction", 
-                                "description": "Direction for finding the radiance determined cloud-top pressure. Atmosphere pressure level with interpolated temperature equal to the radiance determined cloud-top pressure.", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "lowest altitude level", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "highest altitude level", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 3
-                        }
-                    ]
-                }, 
-                {
-                    "label": "Cosp Attributes", 
-                    "description": "CFMIP Observational Simulator Package attributes", 
-                    "id": "cordexp.atmos.observation_simulation.cosp_attributes", 
-                    "contact": "Charlotte Pascoe", 
-                    "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of cfmip observational simulator package attributes in atmos model.", 
-                            "id": "cordexp.atmos.observation_simulation.cosp_attributes.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Run Configuration", 
-                            "description": "Cloud simulator COSP run configuration", 
-                            "id": "cordexp.atmos.observation_simulation.cosp_attributes.run_configuration", 
-                            "cardinality": "0.1", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Cosp Run Configuration", 
-                                "description": "Method used to run the CFMIP Observational Simulator Package", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "Inline", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "Offline", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
-                            "label": "Number Of Grid Points", 
-                            "description": "Cloud simulator COSP number of grid points", 
-                            "id": "cordexp.atmos.observation_simulation.cosp_attributes.number_of_grid_points", 
-                            "cardinality": "0.1", 
-                            "type": "int", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 3
-                        }, 
-                        {
-                            "label": "Number Of Sub Columns", 
-                            "description": "Cloud simulator COSP number of sub-cloumns used to simulate sub-grid variability", 
-                            "id": "cordexp.atmos.observation_simulation.cosp_attributes.number_of_sub_columns", 
-                            "cardinality": "0.1", 
-                            "type": "int", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 4
-                        }, 
-                        {
-                            "label": "Number Of Levels", 
-                            "description": "Cloud simulator COSP number of levels", 
-                            "id": "cordexp.atmos.observation_simulation.cosp_attributes.number_of_levels", 
-                            "cardinality": "0.1", 
-                            "type": "int", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 5
-                        }
-                    ]
-                }, 
-                {
-                    "label": "Radar Inputs", 
-                    "description": "Characteristics of the cloud radar simulator", 
-                    "id": "cordexp.atmos.observation_simulation.radar_inputs", 
-                    "contact": "Charlotte Pascoe", 
-                    "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of characteristics of the cloud radar simulator in atmos model.", 
-                            "id": "cordexp.atmos.observation_simulation.radar_inputs.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Frequency", 
-                            "description": "Cloud simulator radar frequency (Hz)", 
-                            "id": "cordexp.atmos.observation_simulation.radar_inputs.frequency", 
-                            "cardinality": "0.1", 
-                            "type": "float", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
-                            "label": "Type", 
-                            "description": "Cloud simulator radar type", 
-                            "id": "cordexp.atmos.observation_simulation.radar_inputs.type", 
-                            "cardinality": "0.1", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Inputs Radar Type", 
-                                "description": "Type of radar", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "surface", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "space borne", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 3
-                        }, 
-                        {
-                            "label": "Gas Absorption", 
-                            "description": "Cloud simulator radar uses gas absorption", 
-                            "id": "cordexp.atmos.observation_simulation.radar_inputs.gas_absorption", 
-                            "cardinality": "0.1", 
-                            "type": "bool", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 4
-                        }, 
-                        {
-                            "label": "Effective Radius", 
-                            "description": "Cloud simulator radar uses effective radius", 
-                            "id": "cordexp.atmos.observation_simulation.radar_inputs.effective_radius", 
-                            "cardinality": "0.1", 
-                            "type": "bool", 
-                            "is_cim_property": false, 
-                            "uiOrdinal": 5
-                        }
-                    ]
-                }, 
-                {
-                    "label": "Lidar Inputs", 
-                    "description": "Characteristics of the cloud lidar simulator", 
-                    "id": "cordexp.atmos.observation_simulation.lidar_inputs", 
-                    "contact": "Charlotte Pascoe", 
-                    "properties": [
-                        {
-                            "label": "Overview", 
-                            "description": "Overview of characteristics of the cloud lidar simulator in atmos model.", 
-                            "id": "cordexp.atmos.observation_simulation.lidar_inputs.overview", 
-                            "cardinality": "0.1", 
-                            "type": "str", 
-                            "is_cim_property": true, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Ice Types", 
-                            "description": "Cloud simulator lidar ice type", 
-                            "id": "cordexp.atmos.observation_simulation.lidar_inputs.ice_types", 
-                            "cardinality": "0.1", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Inputs Lidar Ice Type", 
-                                "description": "Ice particle shape in lidar calculations", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "ice spheres", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "ice non-spherical", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
-                            "label": "Overlap", 
-                            "description": "Cloud simulator lidar overlap", 
-                            "id": "cordexp.atmos.observation_simulation.lidar_inputs.overlap", 
-                            "cardinality": "0.N", 
-                            "type": "enum", 
-                            "is_cim_property": false, 
-                            "enum": {
-                                "label": "Inputs Lidar Overlap", 
-                                "description": "lidar overlap type", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "max", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "random", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 3
-                        }
-                    ]
-                }
-            ]
-        }, 
-        {
             "label": "Gravity Waves", 
             "description": "Characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources", 
             "id": "cordexp.atmos.gravity_waves", 
@@ -4212,6 +3914,79 @@
                         "id": "cordexp.atmos.grid.discretisation.horizontal", 
                         "properties": [
                             {
+                                "label": "Coordinate System", 
+                                "description": "Name of horizontal coordinate system/projection", 
+                                "id": "cordexp.atmos.grid.discretisation.horizontal.coordinate_system", 
+                                "cardinality": "1.1", 
+                                "type": "enum", 
+                                "is_cim_property": false, 
+                                "enum": {
+                                    "label": "Horizontal Coordinate System", 
+                                    "description": "Type of horizontal projection", 
+                                    "isOpen": true, 
+                                    "choices": [
+                                        {
+                                            "label": "Rotated Polar", 
+                                            "description": null
+                                        }, 
+                                        {
+                                            "label": "Lambert Conformal Conic", 
+                                            "description": null
+                                        }, 
+                                        {
+                                            "label": "Others", 
+                                            "description": null
+                                        }
+                                    ]
+                                }, 
+                                "uiOrdinal": 1
+                            }, 
+                            {
+                                "label": "Coordinate System Details", 
+                                "description": "Details of horizontal coordinate system/projection (e.g. rotated pole, longitude of central meridian, false easting, etc.)", 
+                                "id": "cordexp.atmos.grid.discretisation.horizontal.coordinate_system_details", 
+                                "cardinality": "1.1", 
+                                "type": "str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 2
+                            }, 
+                            {
+                                "label": "Horizontal Resolution", 
+                                "description": "Resolution (in deg or km)", 
+                                "id": "cordexp.atmos.grid.discretisation.horizontal.horizontal_resolution", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 3
+                            }, 
+                            {
+                                "label": "Full Domain", 
+                                "description": "Size of full domain (Nlon x Nlat)", 
+                                "id": "cordexp.atmos.grid.discretisation.horizontal.full_domain", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 4
+                            }, 
+                            {
+                                "label": "Relaxation Zone", 
+                                "description": "Lateral Boundary Relaxation Zone (type, relaxation function, number of grid points (west, south, east, north) and other details)", 
+                                "id": "cordexp.atmos.grid.discretisation.horizontal.relaxation_zone", 
+                                "cardinality": "1.1", 
+                                "type": "str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 5
+                            }, 
+                            {
+                                "label": "Inner Domain", 
+                                "description": "Size of inner domain (Nlon x Nlat)", 
+                                "id": "cordexp.atmos.grid.discretisation.horizontal.inner_domain", 
+                                "cardinality": "0.1", 
+                                "type": "str", 
+                                "is_cim_property": false, 
+                                "uiOrdinal": 6
+                            }, 
+                            {
                                 "label": "Scheme Type", 
                                 "description": "Horizontal discretisation type", 
                                 "id": "cordexp.atmos.grid.discretisation.horizontal.scheme_type", 
@@ -4233,7 +4008,7 @@
                                         }
                                     ]
                                 }, 
-                                "uiOrdinal": 1
+                                "uiOrdinal": 7
                             }, 
                             {
                                 "label": "Scheme Method", 
@@ -4265,7 +4040,7 @@
                                         }
                                     ]
                                 }, 
-                                "uiOrdinal": 2
+                                "uiOrdinal": 8
                             }, 
                             {
                                 "label": "Scheme Order", 
@@ -4293,7 +4068,7 @@
                                         }
                                     ]
                                 }, 
-                                "uiOrdinal": 3
+                                "uiOrdinal": 9
                             }, 
                             {
                                 "label": "Horizontal Pole", 
@@ -4321,7 +4096,7 @@
                                         }
                                     ]
                                 }, 
-                                "uiOrdinal": 4
+                                "uiOrdinal": 10
                             }, 
                             {
                                 "label": "Grid Type", 
@@ -4353,7 +4128,7 @@
                                         }
                                     ]
                                 }, 
-                                "uiOrdinal": 5
+                                "uiOrdinal": 11
                             }
                         ]
                     }, 
@@ -4519,31 +4294,13 @@
                         "uiOrdinal": 1
                     }, 
                     {
-                        "label": "Horizontal Resolution Name", 
-                        "description": "This is a string usually used by the modelling group to describe the resolution of the model grid, e.g. T42, N48.", 
-                        "id": "cordexp.atmos.key_properties.resolution.horizontal_resolution_name", 
-                        "cardinality": "1.1", 
-                        "type": "str", 
-                        "is_cim_property": false, 
-                        "uiOrdinal": 2
-                    }, 
-                    {
                         "label": "Canonical Horizontal Resolution", 
                         "description": "Expression quoted for gross comparisons of resolution, e.g. 2.5 x 3.75 degrees lat-lon.", 
                         "id": "cordexp.atmos.key_properties.resolution.canonical_horizontal_resolution", 
                         "cardinality": "1.1", 
                         "type": "str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 3
-                    }, 
-                    {
-                        "label": "Range Horizontal Resolution", 
-                        "description": "Range of horizontal resolution with spatial details, eg. 1 deg (Equator) - 0.5 deg", 
-                        "id": "cordexp.atmos.key_properties.resolution.range_horizontal_resolution", 
-                        "cardinality": "1.1", 
-                        "type": "str", 
-                        "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Number Of Vertical Levels", 
@@ -4552,7 +4309,7 @@
                         "cardinality": "1.1", 
                         "type": "int", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "High Top", 
@@ -4561,7 +4318,7 @@
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 6
+                        "uiOrdinal": 4
                     }
                 ]
             }, 
@@ -4716,22 +4473,13 @@
                         "uiOrdinal": 2
                     }, 
                     {
-                        "label": "Global Mean Metrics Used", 
-                        "description": "List set of metrics of the global mean state used in tuning model/component", 
-                        "id": "cordexp.atmos.key_properties.tuning_applied.global_mean_metrics_used", 
-                        "cardinality": "0.1", 
-                        "type": "cs-str", 
-                        "is_cim_property": false, 
-                        "uiOrdinal": 3
-                    }, 
-                    {
                         "label": "Regional Metrics Used", 
                         "description": "List of regional metrics of mean state used in tuning model/component", 
                         "id": "cordexp.atmos.key_properties.tuning_applied.regional_metrics_used", 
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 3
                     }, 
                     {
                         "label": "Trend Metrics Used", 
@@ -4740,7 +4488,7 @@
                         "cardinality": "0.1", 
                         "type": "cs-str", 
                         "is_cim_property": false, 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 4
                     }
                 ]
             }
