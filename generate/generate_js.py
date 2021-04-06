@@ -66,7 +66,7 @@ class Generator(SpecializationParser):
         obj['contact'] = root.contact
         obj['authors'] = [i.strip() for i in root.authors.split(',')]
         obj['contributors'] = [i.strip() for i in root.contributors.split(',')]
-        obj['project'] = 'cordexp'
+        obj['project'] = 'cordex'
         obj['changeHistory'] = [_get_change(i) for i in root.change_history]
         obj['subTopics'] = []
 

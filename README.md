@@ -1,7 +1,7 @@
-cordexp-specializations-atmos
+cordex-specializations-atmos
 ===============
 
-Micro-repository to contain atmosphere specific CORDEXP model specializations
+Micro-repository to contain atmosphere specific CORDEX model specializations
 
 
 What is ES-DOC ?
@@ -10,7 +10,7 @@ What is ES-DOC ?
 ES-DOC stands for Earth Science - Documentation.  It's goal is to provide software tools and services in order to support the distribution of earth science documentation.
 
 
-Who uses cordexp-specializations-atmos ?
+Who uses cordex-specializations-atmos ?
 --------------------------------------
 
 Realm experts wishing to standardize model documentation.
